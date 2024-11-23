@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="enrollment.css">
+    <title>Student Enrollment Form</title>
+        
+</head>
+<body>
+    <div id="top">
+        <h1>Student Enrollment Form</h1>
+        <div id="ints">
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Fill in the form fields.</li>
+                <li>Check your interests.</li>
+                <li>Click "Enroll Now" to submit.</li>
+            </ol>
+        </div>
+    </div>
+    
+
+    <form>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100" placeholder="Enter your age" required>
+
+        <fieldset>
+            <legend>Sex:</legend>
+            <label><input type="radio" name="sex" value="Male" required> Male</label>
+            <label><input type="radio" name="sex" value="Female" required> Female</label>
+        </fieldset><br>
+
+        <label for="course">Course Options:</label>
+        <select id="course" name="course" required>
+            <option value="BSIT">BSIT</option>
+            <option value="BSSW">BSSW</option>
+            <option value="BSPA">BSPA</option>
+            <option value="BSPA">DHRS</option>
+            <option value="BSPA">BSE</option>
+            <option value="BSPA">BSAIS</option>
+            <option value="BSPA">BSA</option>
+            <option value="BSPA">BTVTED</option>
+            <option value="BSPA">ABELS</option>
+        </select>
+
+    <fieldset>
+        <legend>Interests:</legend>
+        <label><input type="checkbox" name="interests" value="Web Development"> Web Development</label><br>
+        <label><input type="checkbox" name="interests" value="Data Science"> Data Science</label><br>
+        <label><input type="checkbox" name="interests" value="Networking"> Networking</label><br>
+        <label><input type="checkbox" name="interests" value="Graphic Design"> Graphic Design</label>
+    </fieldset><br>
+
+
+        <button type="submit">Enroll Now</button>
+    </form><br><br><br>
+
+    
+    <table>
+        <head>
+            <h3 id="es">Enrolled Students</h3>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Course</th>
+                <th>Interests</th>
+            </tr>
+        </head>
+        <body>
+            <tr>
+                <td>1</td>
+                <td>MarK Valencia</td>
+                <td>markvalencia@gmail.com</td>
+                <td>19</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Networking</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Justine Dinglasan</td>
+                <td>justinedinglasan@gmail.com</td>
+                <td>18</td>
+                <td>Male</td>
+                <td>BSSW</td>
+                <td>Data Science, Networking</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Genelle Morandarte</td>
+                <td>genellemorandarte@gmail.com</td>
+                <td>18</td>
+                <td>Female</td>
+                <td>BSIT</td>
+                <td>Graphic Design</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Jhon Paulo Untalan</td>
+                <td>paulountalan@gmail.com</td>
+                <td>18</td>
+                <td>Male</td>
+                <td>BSPA</td>
+                <td>Web Development</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Sarah Dinglasan</td>
+                <td>sarahdinglasan@gmail.com</td>
+                <td>24</td>
+                <td>Female</td>
+                <td>BSIT</td>
+                <td>Web Development, Data Science</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Reuel Magadia</td>
+                <td>reuelmagadia@gmail.com</td>
+                <td>20</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Web Development, Data Science</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Carla Binas</td>
+                <td>carlabinas@gmail.com</td>
+                <td>20</td>
+                <td>Female</td>
+                <td>BSSW</td>
+                <td>Data Science</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Lovely Cabana</td>
+                <td>lovelycabana@gmail.com</td>
+                <td>18</td>
+                <td>Female</td>
+                <td>ABELS</td>
+                <td>Web Development</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Allen Mercado</td>
+                <td>allenmercado@gmail.com</td>
+                <td>19</td>
+                <td>Female</td>
+                <td>BSA</td>
+                <td>Graphic Design</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Alexandra Mercado</td>
+                <td>alexandramercado@gmail.com</td>
+                <td>19</td>
+                <td>Female</td>
+                <td>BTVTED</td>
+                <td>Web Development, Data Science</td>
+            </tr>
+
+        </body>
+    </table>
+
+</body>
+</html>
